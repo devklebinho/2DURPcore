@@ -165,13 +165,25 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 425795148}
+        m_TargetAssemblyTypeName: PlayerActions, Assembly-CSharp
+        m_MethodName: MoveOnPlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b94514a7-da98-40cf-b8ca-07058bc3b33e
     m_ActionName: 'Game/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 425795148}
-        m_TargetAssemblyTypeName: TesteInput, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerActions, Assembly-CSharp
         m_MethodName: ShortJump
         m_Mode: 0
         m_Arguments:
@@ -187,7 +199,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 425795148}
-        m_TargetAssemblyTypeName: TesteInput, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerActions, Assembly-CSharp
         m_MethodName: LongJump
         m_Mode: 0
         m_Arguments:
@@ -200,9 +212,33 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: ca161fab-b58b-417d-9224-76ef525174d6
     m_ActionName: 'Game/LongJump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b6c0c1f4-b0be-4f55-acf3-8dfdd3e3d760
+    m_ActionName: 'Plataform/Switch to TopDown[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TesteInput, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8be44c85-393b-4963-a1d4-ce77b6b829c0
+    m_ActionName: 'TopDown/Fly[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 86fe8f0b-fca1-45b7-8535-0816e774b69a
+    m_ActionName: 'TopDown/Switch to Platform[/Keyboard/r]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Game
+  m_DefaultActionMap: Plataform
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!212 &425795146
