@@ -54,7 +54,6 @@ public class PlayerActions : MonoBehaviour
             Debug.Log($"x: {action.ReadValue<Vector2>().x}, y: {action.ReadValue<Vector2>().y}");
             Debug.Log("Platform movement");
         }
-
     }
 
     //Top Down movements
@@ -66,4 +65,5 @@ public class PlayerActions : MonoBehaviour
             Debug.Log("Top Down movement");
         }
     }
+
 }

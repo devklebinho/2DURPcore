@@ -2,7 +2,7 @@
     "name": "PlayerInput",
     "maps": [
         {
-            "name": "Plataform",
+            "name": "Platform",
             "id": "3d5e81c1-b7ef-470b-97bb-f55ded35fccb",
             "actions": [
                 {
@@ -154,6 +154,61 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Ketchup",
+                    "id": "1b4064db-b393-4515-bb40-0f5f7963a52a",
+                    "path": "2DVector",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "408800c2-c9bd-4ab7-94ec-50babe2ea186",
+                    "path": "<HID::Microntek              USB Joystick          >/hat/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "63690835-0df9-4460-9b65-d431130b383f",
+                    "path": "<HID::Microntek              USB Joystick          >/hat/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "40c1d53b-af1f-48ed-8154-a86bcafa7a09",
+                    "path": "<HID::Microntek              USB Joystick          >/hat/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b6ddb59a-0c90-46e9-a7b7-bf058ba792af",
+                    "path": "<HID::Microntek              USB Joystick          >/hat/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "494aef95-89da-40cf-9471-62a93e9ea400",
                     "path": "<Keyboard>/space",
@@ -169,6 +224,17 @@
                     "id": "2cb8c208-1f1c-46c9-87ce-17ffad1dd964",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShortJump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8558ee6-b9a4-4281-bd8c-8cf5d3ad5a07",
+                    "path": "<HID::Microntek              USB Joystick          >/button2",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ShortJump",
@@ -199,8 +265,30 @@
                 },
                 {
                     "name": "",
+                    "id": "a055b371-71dc-4b13-b8d8-d764c982ab80",
+                    "path": "<HID::Microntek              USB Joystick          >/button2",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LongJump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "bb8cff2f-7129-4ef6-81b5-a27ce0cf83ce",
                     "path": "<Keyboard>/e",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch to TopDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d331af0-92c5-4c78-87ac-78765b5a0cc1",
+                    "path": "<HID::Microntek              USB Joystick          >/button6",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -347,7 +435,18 @@
                 {
                     "name": "",
                     "id": "7e3fafc8-8b79-4419-9118-e62d75784d0c",
-                    "path": "<Keyboard>/r",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch to Platform",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b2cdd8ce-de84-4af2-a27d-d6f48c26e8d5",
+                    "path": "<HID::Microntek              USB Joystick          >/button6",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
