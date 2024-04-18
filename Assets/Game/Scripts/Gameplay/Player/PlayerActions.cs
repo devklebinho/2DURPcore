@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;      
 public class PlayerActions : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    private Vector2 movementInput;
+
     //Action maps
     public static string PlatformerMap = "Platform";
     public static string TopDownMap = "TopDown";
@@ -13,6 +16,7 @@ public class PlayerActions : MonoBehaviour
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
@@ -61,9 +65,9 @@ public class PlayerActions : MonoBehaviour
     {
         if (action.performed)
         {
+            movementInput = action.ReadValue<Vector2>();
             Debug.Log($"x: {action.ReadValue<Vector2>().x}, y: {action.ReadValue<Vector2>().y}");
             Debug.Log("Top Down movement");
         }
     }
-
 }
